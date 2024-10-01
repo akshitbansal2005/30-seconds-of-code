@@ -28,7 +28,8 @@
     "unified": "^11.0.4",
     "unist-util-visit": "^5.0.0",
     "unist-util-visit-parents": "^6.0.1",
-    "vitest": "^2.0.4"
+    "vitest": "^2.0.4",
+    "c8": "^8.0.0"  // Added code coverage tool (optional)
   },
   "imports": {
     "#src/*": [
@@ -46,6 +47,7 @@
     "build": "astro build",
     "preview": "astro preview --port 9000",
     "test": "vitest",
+    "coverage": "vitest run --coverage",  // Added test coverage script (optional)
     "create": "bin/prepare create",
     "console": "bin/console",
     "watch": "npm run dev & bin/prepare watch"
